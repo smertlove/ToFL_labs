@@ -8,7 +8,6 @@ class State(Enum):
     OR           = 2
     CHAR         = 3
     ESCAPE       = 4
-    END_B        = 5
     END          = 777
     ERR          = 666
 
@@ -18,8 +17,6 @@ class Token(Enum):
     OR         = 2
     SLASH      = 3
     CHAR       = 4
-    OPEN_B     = 5
-    CLOSE_B    = 6
     END        = 777
 
 
