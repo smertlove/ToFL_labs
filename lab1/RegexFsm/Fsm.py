@@ -411,7 +411,7 @@ class Stack(Generic[T]):
         return f"{self.__class__.__name__}({self.items} <- top)"
 
 
-def is_barckets_balanced(template: str) -> bool:
+def is_brackets_balanced(template: str) -> bool:
     """
         Проверяет, что скобочная последовательность в строке верна.
     """
@@ -433,7 +433,7 @@ class Fsm(_Fsm):
     
     def __init__(self, pattern: str):
 
-        if not is_barckets_balanced(pattern):
-            raise Exception(f"В паттерне \"{pattern}\" со скобочками.")
+        if not is_brackets_balanced(pattern):
+            raise Exception(f"В паттерне \"{pattern}\" со скобочками беда.")
         
         super().__init__(pattern)
