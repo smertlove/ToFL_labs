@@ -1,7 +1,7 @@
 from lark import Lark
 
 
-grammar = """
+ddl_grammar = """
 
 start: instruction+
 
@@ -34,10 +34,10 @@ DATATYPE: ("INT"|"FLOAT"|"CHAR"["(" NUMBER ")"])
 %ignore NEWLINE
 
 """
+import re
 
 
-
-code = """
+ddl_code = """
 
 CREATE TABLE user IF NOT EXISTS (
     id INT PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -54,4 +54,11 @@ DROP TABLE user;
 
 """
 
+
+
+dml_grammar = """
+
+
+
+"""
 
