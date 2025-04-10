@@ -78,7 +78,7 @@ MILLISECOND: /[0-9]{3}/
 
 DATATYPE: "INT"i
         |"FLOAT"i
-        | "BOOLEAN"i
+        |"BOOLEAN"i
         |"CHAR"i["(" NUMBER ")"]
         |"varCHAR"i["(" NUMBER ")"]
         |"TEXT"i["(" NUMBER ")"]
